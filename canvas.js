@@ -36,8 +36,8 @@ window.addEventListener("load", ()=>{
         if(!paiting) return;
         ctx.lineWidth = 10;
         ctx.lineCap="round";
-
         ctx.lineTo(e.clientX, e.clientY);
+        ctx.strokeStyle="red"
         ctx.stroke(); // Essential to visualize
         ctx.beginPath();
         ctx.moveTo(e.clientX, e.clientY)
